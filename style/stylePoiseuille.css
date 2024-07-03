@@ -1,0 +1,129 @@
+body{
+    border: 2px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+.title{
+    text-align: center;
+    color: rgb(114, 244, 88);
+}
+.table{
+    margin: auto;
+    justify-content: center;
+}
+
+#poiseuilleForm{
+
+    text-align: center;
+    color: rgb(114, 244, 88);
+}
+th{
+    font-size: 4.5mm;
+}
+tr{
+    font-size: 4.5mm;
+}
+td{
+    font-size: 4.5mm;
+    text-align: center;
+    align-items: center;
+}
+#flowrate{
+    width: 18vw;    
+    height: 8vh;
+    margin-top: 2vh;
+    font-size: 4.5mm;
+    border-radius: 1vh;
+    border: 1.5px solid rgb(255, 255, 255);
+    padding: 2.5vh 4vw;
+    background-color: rgba(0, 0, 0, 0);
+    color: aliceblue;
+    cursor:pointer;
+    transition-duration: 0.4s;
+}
+#Length{
+    width: 18vw;
+    height: 8vh;
+    margin-top: 2vh;
+    font-size: 4.5mm;
+    border-radius: 1vh;
+    border: 1.5px solid rgb(255, 255, 255);
+    padding: 2.5vh 4vw;
+    background-color: rgba(0, 0, 0, 0);
+    color: aliceblue;
+    cursor:pointer;
+    transition-duration: 0.4s;
+}
+
+#Pressure-Difference{
+    width: 18vw;
+    height: 8vh;
+    margin-top: 2vh;
+    font-size: 4.5mm;
+    border-radius: 1vh;
+    border: 1.5px solid rgb(255, 255, 255);
+    padding: 2.5vh 4vw;
+    background-color: rgba(0, 0, 0, 0);
+    color: aliceblue;
+    cursor:pointer;
+    transition-duration: 0.4s;
+}
+#Radius{
+    width: 18vw;
+    height: 8vh;
+    margin-top: 2vh;
+    font-size: 4.5mm;
+    border-radius: 1vh;
+    transition-duration: 0.4s;
+    border: 1.5px solid rgb(255, 255, 255);
+    padding: 2.5vh 4vw;
+    background-color: rgba(0, 0, 0, 0);
+    color: aliceblue;
+    cursor:pointer;
+}
+#Viscosity{
+
+    transition-duration: 0.4s;
+    width: 18vw;
+    height: 8vh;
+    margin-top: 2vh;
+    font-size: 4.5mm;
+    border-radius: 1vh;
+    border: 1.5px solid rgb(255, 255, 255);
+    padding: 2.5vh 4vw;
+    background-color: rgba(0, 0, 0, 0);
+    color: aliceblue;
+    cursor:pointer;
+}
+#Viscosity:hover {
+    background-color: #c53131; 
+  color: white;
+  box-shadow: 0 0 20px #c53131; 
+  }
+
+#flowrate:hover{
+    background-color: #41b8ba; 
+    color: white;
+    box-shadow: 0 0 20px #41b8ba; 
+}
+#Length:hover{
+    background-color: #2dab7d;
+    color: white;
+    box-shadow: 0 0 20px #2dab7d; 
+}
+#Pressure-Difference:hover{
+    background-color: #e2af15;
+    color: white;
+    box-shadow: 0 0 20px #e2af15; 
+}
+#Radius:hover{
+    background-color: #d96b10;
+    color: white;
+    box-shadow: 0 0 20px #d96b10;
+}
+
+
+

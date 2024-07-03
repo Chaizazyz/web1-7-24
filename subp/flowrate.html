@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowrate</title>
+    <script src="js/scriptflowrate.js"></script>
+    <link rel="stylesheet" href="style/styleFloerate.css">
+</head>
+<body>
+    <div class="table">
+        <form onsubmit="calculateflowrate(event)" id="poiseuilleForm">
+            <table >
+                <tr>
+                    <td ><h1 class="title">Flow rate(m³/s) =  </td>
+                        <td><h1 id="result">?</h1></td>
+                    
+                </tr>
+                <tr><td id="td1"><label for="deltaP">Pressure Difference (ΔP, in Pa):</label></td>
+                <td><input type="number" id="deltaP" step="0.0001" required></td></tr>    
+            
+                <tr><td id="td1"><label for="radius">Radius (r, in m):</label></td>
+                <td><input type="number" id="radius" step="0.0001" required></td></tr>
+               
+            
+                <tr><td id="td1"><label for="viscosity">Viscosity (η, in Pa·s):</label></td>
+                <td><input type="number" id="viscosity" step="0.0001" required></td></tr>
+               
+                
+                <tr><td id="td1"><label for="length">Length (L, in m):</label></td>
+                <td><input type="number" id="length" step="0.0001" required></td></tr>
+                
+                <tr><td colspan="2"    class="footer"><button onclick="calculateflowrate()">Calculate</button></td></tr>
+            </table>
+        </form>
+        
+    </div>
+    
+</html>

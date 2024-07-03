@@ -1,0 +1,128 @@
+body {
+    background-color: black;
+
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+    border: 1px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+}
+
+#text-main{
+    font-family: "Arial";
+    font-size: 5vmax;
+    text-align: center;
+    color: rgb(114, 244, 88);
+}
+#button{
+    display: flex;
+    justify-content: space-around;
+
+}
+#Poiseuille-button{
+    font-size: 4.5mm;
+    border-radius: 5vh;
+    border: 1.5px solid yellowgreen;
+    margin-right: 2.5vw;
+    padding: 2.5vh 4vw;
+    background-color: rgb(238, 57, 57);
+    color: aliceblue;
+    cursor:pointer;
+}
+#Surface-button{
+    font-size: 4.5mm;
+    border-radius: 5vh;
+    border: 1.5px solid yellowgreen;
+    margin-left: 2.5vw;
+    padding: 2.5vh 4vw;
+    color: aqua;
+    background-color: blue;
+    cursor:pointer;
+}
+/* === removing default button style ===*/
+#Poiseuille-button{
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* button styling */
+  #Poiseuille-button{
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: #37FF8B;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  #hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 1s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  #Poiseuille-button:hover #hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+  #hover-text1 {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 1s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  #Surface-button:hover #hover-text1 {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+  #Surface-button{
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* button styling */
+  #Surface-button{
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: #37FF8B;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }

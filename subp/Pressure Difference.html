@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pressure Differenceh</title>
+    <script src="js/scriptPressure-Difference.js"></script>
+    <link rel="stylesheet" href="style/stylePressure-Difference.css">
+</head>
+<body>
+    <div class="table">
+        <form onsubmit="calculateDeltaP(event)" id="poiseuilleForm">
+            <table >
+                <tr>
+                    <td ><h1 id="title">Pressure Differenceh(pa) =  </td>
+                        <td><h1 id="result">?</h1></td>
+                    
+                </tr>
+                <tr><td id="td1"><label for="length">Length (m):</label></td>
+                <td><input type="number" id="length" step="0.0001" required></td></tr>    
+            
+                <tr><td id="td1"><label for="radius">Radius (r, in m):</label></td>
+                <td><input type="number" id="radius" step="0.0001" required></td></tr>
+               
+            
+                <tr><td id="td1"><label for="viscosity">Viscosity (η, in Pa·s):</label></td>
+                <td><input type="number" id="viscosity" step="0.0001" required></td></tr>
+               
+                
+                <tr><td id="td1"><label for="flowrate">flowrate (m³/s):</label></td>
+                <td><input type="number" id="flowrate" step="0.0001" required></td></tr>
+                
+                <tr><td colspan="2"    class="footer"><button onclick="calculateDeltaP()">Calculate</button></td></tr>
+            </table>
+        </form>
+        
+    </div>
+    
+    
+</body>
+</html>
